@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+text-lg {
+  @apply text-2xl font-semibold leading-[38px];
+}
+text-md-normal {
+  @apply text-base font-normal leading-[38px];
+}
+text-md-medium {
+  @apply text-base font-medium leading-[38px];
+}
+form-label {
+  @apply text-sm font-medium text-gray-600;
+}
+.input-text {
+  @apply text-base font-normal text-dark;
+}
+.btn-solid {
+  @apply text-base font-medium text-white bg-purple rounded-lg;
+}
+.btn-outline {
+  @apply text-base font-medium text-gray-600 rounded-lg bg-transparent border;
+  @apply hover:text-white hover:bg-purple;
+}
