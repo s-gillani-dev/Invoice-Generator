@@ -12,7 +12,7 @@ text-lg {
   @apply text-2xl font-semibold leading-[38px];
 }
 text-md-normal {
-  @apply text-base font-normal leading-[38px];
+  @apply text-base font-normal;
 }
 text-md-medium {
   @apply text-base font-medium leading-[38px];

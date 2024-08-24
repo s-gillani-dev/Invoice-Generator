@@ -18,7 +18,7 @@ const config: Config = {
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
         'xl': '1376px',
-        // => @media (min-width: 1280px) { ... }
+        // => @media (min-width: 1376px) { ... }
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
       },
@@ -27,12 +27,14 @@ const config: Config = {
         'white': '#FFFFFF',
         'purple': '#7F56D9',
         'gray': {
+          '50': '#EAECF0',
           '100': '#F5F5F5',
           '200': '#8E8E8E',
           '300': '#76787D',
           '400': '#667085',
           '500': '#555555',
-          '600': '#344054'
+          '600': '#344054',
+          '700': '#D0D5DD',
         }
       }
     },
