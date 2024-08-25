@@ -3,9 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Favicon from "@/../public/logo.svg";
 import AppHeader from "@/components/AppHeader";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ["latin"] });
-
+// we can create a custom hook to set the metadata for the routes with the dynamic or static data 
 export const metadata: Metadata = {
   title: "Invoice Generator",
   description:
@@ -22,8 +24,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className="relative max-w-[1440px] min-h-[1327px] mx-auto">
-          <AppHeader />
-          {children}
+            <AppHeader />
+            {children}
+          <ToastContainer />
         </main>
       </body>
     </html>
